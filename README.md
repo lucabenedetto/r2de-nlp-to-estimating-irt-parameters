@@ -10,7 +10,7 @@ The scripts that were used to obtain the results are:
 
 All the scripts require the data to be stored in a folder whose path is saved in the DATA_PATH constant (in our case it was './data/', thus that is the value of the variable in constants.py)
 
-This code uses data stored in three .csv files, as shown in the _constants.py_ file:
+This code uses data stored in three _.csv_ files, as shown in the _constants.py_ file:
 
 - _answers\_texts.csv_
 - _detailed\_quiz\_session_answer.csv_
