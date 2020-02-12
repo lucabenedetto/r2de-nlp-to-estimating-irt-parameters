@@ -16,7 +16,7 @@ This code uses data stored in three .csv files, as shown in the constants.py fil
 - _detailed\_quiz\_session_answer.csv_
 - _questions\_counts.csv_
 
-Below, a description of the type of information contained in each file and thei structure. It should be sufficient to format your data in the same way as presented here to use these scripts without any changes.
+Below, a description of the type of information contained in each file and their structure. It should be sufficient to format your data in the same way as presented here to use these scripts without any changes.
 
 - _detailed\_quiz\_session_answer.csv_ contains the list of interactions between students and items (i.e. the answers given by the students to the questions they encountered). The following columns are used:
     - `user\_id`: the ID of the student (str)
