@@ -1,11 +1,11 @@
 import numpy as np
 import pandas as pd
-from src.utils.math import (
+from r2de.utils.math import (
     inverse_item_response_function,
     item_response_function,
     information_function,
 )
-from src.constants import (
+from r2de.constants import (
     USER_ID_HEADER,
     CORRECT_HEADER,
     QUESTION_ID_HEADER,

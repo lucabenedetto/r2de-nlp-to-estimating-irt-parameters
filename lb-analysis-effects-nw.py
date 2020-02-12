@@ -11,9 +11,9 @@ import pickle
 
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
-from src.utils.text_processing import text_preprocessor
-from src.utils.data_manager import concatenate_answers_text_into_question_text_df
-from src.constants import (
+from r2de.utils.text_processing import text_preprocessor
+from r2de.utils.data_manager import concatenate_answers_text_into_question_text_df
+from r2de.constants import (
     QUESTION_ID_HEADER,
     QUESTION_TEXT_HEADER,
     FEATURES_HEADER,

@@ -1,7 +1,7 @@
 import pandas as pd
 from pyirt import irt
 
-from src.constants import (
+from r2de.constants import (
     DIFFICULTY_MIN,
     DIFFICULTY_MAX,
     DEFAULT_DISCRIMINATION,

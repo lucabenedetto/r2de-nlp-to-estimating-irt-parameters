@@ -12,9 +12,9 @@ Results are saved in the output file specified at the beginning of the script.
 """
 import pandas as pd
 import pickle
-from src.utils.evaluation_metrics import gen_output
-from src.models.predict_model import irt_prediction_with_update
-from src.constants import (
+from r2de.utils.evaluation_metrics import gen_output
+from r2de.models.predict_model import irt_prediction_with_update
+from r2de.constants import (
     CORRECT_HEADER,
     DATA_PATH,
     DS_VAL_FILENAME,

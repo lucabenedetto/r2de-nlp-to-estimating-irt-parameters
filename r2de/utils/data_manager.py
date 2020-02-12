@@ -1,5 +1,5 @@
 import pandas as pd
-from src.constants import (
+from r2de.constants import (
     CORRECT_HEADER,
     DESCRIPTION_HEADER,
     QUESTION_ID_HEADER,

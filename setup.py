@@ -1,10 +1,10 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='src',
+    name='r2de',
     packages=find_packages(),
     version='0.1.0',
-    description='Package for the estimation of difficulty and discrimination of multiple-choice questions from text',
+    description='Module for the estimation of difficulty and discrimination of multiple-choice questions from text',
     author='Luca Benedetto',
     license='',
     install_requires=[

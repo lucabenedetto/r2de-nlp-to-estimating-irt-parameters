@@ -11,11 +11,11 @@ from sklearn.model_selection import (
     train_test_split,
 )
 from sklearn.feature_extraction.text import TfidfVectorizer
-from src.models.data_preparation import train_test_split_by_column
-from src.utils.estimators import question_irt_estimation
-from src.utils.text_processing import text_preprocessor
-from src.utils.evaluation_metrics import evaluation_metrics_to_string
-from src.constants import (
+from r2de.models.data_preparation import train_test_split_by_column
+from r2de.utils.estimators import question_irt_estimation
+from r2de.utils.text_processing import text_preprocessor
+from r2de.utils.evaluation_metrics import evaluation_metrics_to_string
+from r2de.constants import (
     DATA_PATH,
     ANSWERS_TEXT_FILENAME,
     DETAILED_QS_ANSWERS_FILENAME,
@@ -33,7 +33,7 @@ from src.constants import (
     TARGET_DISCRIMINATION_HEADER,
     TARGET_DIFFICULTY_HEADER,
 )
-from src.utils.data_manager import concatenate_answers_text_into_question_text_df
+from r2de.utils.data_manager import concatenate_answers_text_into_question_text_df
 from sklearn.ensemble.forest import RandomForestRegressor
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.linear_model import LinearRegression
