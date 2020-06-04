@@ -2,6 +2,21 @@
 
 This folder contains the code used to obtain the results of the paper "R2DE: a NLP approach to estimating IRT parameters of newly generated questions" (https://arxiv.org/abs/2001.07569), presented at the LAK20 conference.
 
+---
+
+If you use this code, please cite the related paper:
+```
+@inproceedings{benedetto2020r2de,
+  title={R2DE: a NLP approach to estimating IRT parameters of newly generated questions},
+  author={Benedetto, Luca and Cappelli, Andrea and Turrin, Roberto and Cremonesi, Paolo},
+  booktitle={Proceedings of the Tenth International Conference on Learning Analytics \& Knowledge},
+  pages={412--421},
+  year={2020}
+}
+```
+
+---
+
 The scripts that were used to obtain the results are:
 
 - _lb-cv-for-model-choice.py_: cross validation for model choice and tests on latent traits estimation
