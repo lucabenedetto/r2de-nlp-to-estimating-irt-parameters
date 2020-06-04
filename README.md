@@ -1,6 +1,8 @@
 # R2DE: a NLP approach to estimating IRT parameters of newly generated questions
 
-This folder contains the code used to obtain the results of the paper "R2DE: a NLP approach to estimating IRT parameters of newly generated questions" (https://arxiv.org/abs/2001.07569), presented at the LAK20 conference.
+This folder contains the code used to obtain the results of the paper 
+"*R2DE: a NLP approach to estimating IRT parameters of newly generated questions*" (https://arxiv.org/abs/2001.07569), 
+which was presented at the LAK20 conference and was one of the papers candidate to the "best paper award".
 
 ---
 
