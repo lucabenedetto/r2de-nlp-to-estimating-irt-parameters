@@ -10,7 +10,7 @@ setup(
     install_requires=[
         "matplotlib==3.1.2",
         "nltk==3.4.5",
-        "numpy==1.18.1",
+        "numpy==1.22.0",
         "pandas==0.25.3",
         "pyirt==0.3.4",
         "scikit-learn==0.22.1",
