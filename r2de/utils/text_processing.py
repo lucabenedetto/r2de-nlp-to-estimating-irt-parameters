@@ -1,7 +1,7 @@
 import re
 import string
 from nltk.stem import PorterStemmer
-from sklearn.feature_extraction.stop_words import ENGLISH_STOP_WORDS
+from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 
 
 def text_preprocessor(
