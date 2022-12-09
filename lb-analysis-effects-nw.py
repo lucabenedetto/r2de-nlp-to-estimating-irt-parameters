@@ -23,7 +23,7 @@ from r2de.constants import (
     TARGET_DIFFICULTY_HEADER,
     TARGET_DISCRIMINATION_HEADER,
 )
-from sklearn.ensemble.forest import RandomForestRegressor
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 
 plt.rcParams.update({'text.usetex': True, 'font.size': 14})

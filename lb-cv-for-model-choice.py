@@ -34,7 +34,7 @@ from r2de.constants import (
     TARGET_DIFFICULTY_HEADER,
 )
 from r2de.utils.data_manager import concatenate_answers_text_into_question_text_df
-from sklearn.ensemble.forest import RandomForestRegressor
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.svm import SVR
