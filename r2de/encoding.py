@@ -18,7 +18,7 @@ def concatenate_answers_text_into_question_text_df(
 
 def get_encoded_texts(mode, df_train, df_test):
     if mode == 0:
-        print("DOING ENCODING 1")
+        print("DOING ENCODING 0 - Q_only")
         # output_file.write('ENCODING 1: "question only"\n')
         df_train[FEATURES_HEADER] = df_train.apply(lambda r: r[QUESTION_TEXT_HEADER].lower(), axis=1)
         x_train = list(df_train[FEATURES_HEADER].values)
@@ -26,7 +26,7 @@ def get_encoded_texts(mode, df_train, df_test):
         x_test = list(df_test[FEATURES_HEADER].values)
 
     elif mode == 1:
-        print("DOING ENCODING 2")
+        print("DOING ENCODING 1 - Q_correct")
         # output_file.write('\nENCODING 2: "question correct"\n')
         df_train[QUESTION_TEXT_HEADER] = concatenate_answers_text_into_question_text_df(
             df_train, correct=True, wrong=False)
@@ -37,8 +37,8 @@ def get_encoded_texts(mode, df_train, df_test):
         df_test[FEATURES_HEADER] = df_test.apply(lambda r: r[QUESTION_TEXT_HEADER].lower(), axis=1)
         x_test = list(df_test[FEATURES_HEADER].values)
 
-    else:  # encoding_idx == 2
-        print("DOING ENCODING 3")
+    elif mode == 2:  # encoding_idx == 2
+        print("DOING ENCODING 2 - Q_all")
         # output_file.write('\nENCODING 3: "question full"\n')
         df_train[QUESTION_TEXT_HEADER] = concatenate_answers_text_into_question_text_df(
             df_train, correct=True, wrong=True)
@@ -48,5 +48,8 @@ def get_encoded_texts(mode, df_train, df_test):
             df_test, correct=True, wrong=True)
         df_test[FEATURES_HEADER] = df_test.apply(lambda r: r[QUESTION_TEXT_HEADER].lower(), axis=1)
         x_test = list(df_test[FEATURES_HEADER].values)
+
+    else:
+        raise ValueError("Wrong encoding selected. Must be one of {0, 1, 2}.")
 
     return x_train, x_test
